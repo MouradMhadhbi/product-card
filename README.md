@@ -5,7 +5,7 @@ Créer une application React affichant un produit sous forme de carte avec des c
 
 ## 🚀 Installation
 ```bash
-git clone <repository_url>
+git clone https://github.com/MouradMhadhbi/product-card.git
 cd product-card
 npm install
 npm start
