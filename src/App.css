@@ -1,38 +1,92 @@
-.App {
+/* --- STYLE GÉNÉRAL DU BODY --- */
+body {
+  /* Dégradé de fond */
+  background: linear-gradient(135deg, #1c1f26, #2e3440);
+  /* Couleur du texte principale */
+  color: #fff;
+  /* Police générale */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- STYLE DE LA CARTE PRODUIT --- */
+.product-card {
+  /* Coins arrondis */
+  border-radius: 20px;
+  /* Empêche le débordement du contenu */
+  overflow: hidden;
+  /* Couleur de fond de la carte */
+  background-color: #fff;
+  /* Couleur du texte */
+  color: #333;
+  /* Transition fluide sur le hover */
+  transition: all 0.3s ease;
+}
+
+/* Effet au survol de la carte */
+.product-card:hover {
+  /* Agrandissement léger */
+  transform: scale(1.03);
+  /* Ombre sous la carte */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Bordure entre image et contenu */
+.card-img-top {
+  border-bottom: 2px solid #eaeaea;
+}
+
+/* --- SECTION HELLO --- */
+.hello-section {
+  /* Centrage du contenu */
   text-align: center;
+  /* Espace au-dessus */
+  margin-top: 50px;
+  /* Rembourrage interne */
+  padding: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style du titre Hello */
+.hello-section h1 {
+  /* Taille de police importante */
+  font-size: 3rem;
+  /* Texte en gras */
+  font-weight: 800;
+  /* Couleur bleu React */
+  color: #00d8ff;
+  /* Effet lumineux bleu clair */
+  text-shadow: 0 0 10px rgba(0, 216, 255, 0.7), 0 0 25px rgba(0, 216, 255, 0.4);
+  /* Animation continue pour effet glow */
+  animation: glow 2s infinite alternate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Définition de l’animation glow */
+@keyframes glow {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 10px rgba(0, 216, 255, 0.7), 0 0 25px rgba(0, 216, 255, 0.4);
   }
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 25px rgba(0, 216, 255, 1), 0 0 50px rgba(0, 216, 255, 0.8);
   }
+}
+
+/* Style de l’image sous Hello */
+.hello-section img {
+  /* Marge au-dessus */
+  margin-top: 20px;
+  /* Taille de l’image */
+  width: 110px;
+  /* Forme ronde */
+  border-radius: 50%;
+  /* Bordure bleue autour de l’image */
+  border: 4px solid #00d8ff;
+  /* Effet lumineux autour de l’image */
+  box-shadow: 0 0 15px rgba(0, 216, 255, 0.6);
+  /* Animation fluide sur le hover */
+  transition: transform 0.4s ease;
+}
+
+/* Effet au survol de l’image */
+.hello-section img:hover {
+  /* Agrandissement et légère rotation */
+  transform: scale(1.1) rotate(10deg);
 }
