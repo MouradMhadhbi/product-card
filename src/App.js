@@ -1,12 +1,10 @@
-// Importation de React
-import React from "react";
 // Importation des composants de mise en page de Bootstrap
 import { Card, Container, Button } from "react-bootstrap";
 // Importation des composants enfants
-import Name from "./Name";
-import Price from "./Price";
-import Description from "./Description";
-import Image from "./Image";
+import Name from "./components/Name";
+import Price from "./components/Price";
+import Description from "./components/Description";
+import Image from "./components/Image";
 // Importation du fichier de style personnalisé
 import "./App.css";
 

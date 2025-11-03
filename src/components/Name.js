@@ -1,7 +1,5 @@
-// Importation de React pour utiliser la syntaxe JSX
-import React from "react";
 // Importation de l'objet produit défini dans product.js
-import product from "./product";
+import product from "../data/product.js";
 
 // ✅ Définition du composant Name
 const Name = () => {

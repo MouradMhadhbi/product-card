@@ -16,13 +16,21 @@ npm start
 ## 📁 Structure
 ```text
 src/
-├── App.js
-├── App.css
-├── product.js
-├── Name.js
-├── Price.js
-├── Description.js
-├── Image.js
+│
+├── components/                 ← 📁 Dossier contenant les composants React
+│   ├── Name.js                 ← Affiche le nom du produit
+│   ├── Price.js                ← Affiche le prix du produit
+│   ├── Description.js          ← Affiche la description du produit
+│   └── Image.js                ← Affiche l’image du produit
+│
+├── data/                       ← 📁 Dossier pour les données du produit
+│   └── product.js              ← Contient l’objet JSON exporté
+│
+├── App.js                      ← 🧩 Composant racine de l’application React
+├── App.css                     ← 🎨 Feuille de style principale
+├── index.js                    ← 🚀 Point d’entrée qui monte <App /> dans le DOM
+└── index.css                   ← 🌍 Styles globaux (facultatif)
+
 ```
 ---
 

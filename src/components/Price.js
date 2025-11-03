@@ -1,7 +1,5 @@
-// Importation de React
-import React from "react";
 // Importation des données du produit
-import product from "./product";
+import product from "../data/product.js";
 
 // ✅ Définition du composant Price
 const Price = () => {
